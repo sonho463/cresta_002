@@ -84,6 +84,10 @@ ul ol {
   margin-bottom: 0;
 }
 
+li {
+	list-style: none;
+}
+
 dt {
   font-weight: 700;
 }
@@ -123,28 +127,29 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: white;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
+  color: white;
   text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
 a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
 a:not([href]):not([tabindex]):focus {
-  outline: 0;
+	outline: 0;
+	color: white;
 }
 
 pre,
@@ -201,8 +206,9 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  /* outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color; */
+	outline: none;
 }
 
 input,
@@ -228,6 +234,10 @@ select {
 
 select {
   word-wrap: normal;
+}
+
+button {
+	outline: none;
 }
 
 button,

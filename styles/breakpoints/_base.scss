@@ -3,23 +3,19 @@ body{
 }
 
 // フォントサイズ
-.font-sm {
-  font-size: 14px;
-}
-.font-md {
-  font-size: 17px;
-}
-.font-lr {
-  font-size: 17px;
-}
-.font-lg {
-  font-size: 25px;
-}
 
+.font-lg	{ font-size:	40	px	;}
+.font-lr	{ font-size:	30	px	;}
+.font-md	{ font-size:	26	px	;}
+.font-sm	{ font-size:	16	px	;}
+.font-footer	{ font-size:	14	px	;}
 
 // マージン・パディング
 .mb-sm {
   margin-bottom: 16px !important;
+}
+.mb-md {
+	margin-bottom: 40px !important;
 }
 .mb-lg {
   margin-bottom: 80px !important;
@@ -37,3 +33,115 @@ body{
   margin: 0 auto;
   max-width: $contentMaxWidth;
 }
+
+// 箇条書きスタイル消す
+ul {
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+
+// -------------
+// header
+// -------------
+
+.header {
+	background-color: $--main-bg-cBlack;
+	color: $--main-font-cWhite;
+	height: 599px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	position: relative;
+	// background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),url(/img/fv-bgi_01@2x.jpg);
+	background-image: url(/img/fv-bgi_01@2x.jpg);
+	background-repeat:  no-repeat;
+	background-size: cover;
+	background-position: center;
+	}
+
+.header__nav-bar {
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sp-menu{
+	z-index: 100;
+	width: 32px;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	& span {
+		background-color: $--main-font-cWhite;
+		width: 32px;
+		height: 2px;
+		margin-bottom: 8px;
+		display: block;
+		transition: 1s;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.menu-list {
+	transition: 1s;
+	// display: none;
+	visibility: hidden;
+	transform: scaleX(0);
+	// transform: translateX(1000px);
+	transform-origin: right;
+	// background-color: $--main-bg-cBlack;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 812px;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	& ul {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 45%;
+		transform: translate(-50% , -50%);
+		li {
+			font-style: italic;
+			line-height: 3em;
+		}
+
+	}
+}
+
+.menu-list-open{
+	transform: scaleX(1);
+	visibility: visible;
+	// transform: translateX(0);
+	// display: block;
+	}
+
+	.header__title {
+		display: flex;
+		height: 100%;
+		width:100%;
+		flex-direction: column;
+		// justify-content: center;
+		align-items: center;
+		padding-top: 8em;
+		letter-spacing: 0.25em;
+		h1{
+			width: 100%;
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+		}
+	}
