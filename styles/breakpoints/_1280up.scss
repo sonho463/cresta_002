@@ -1,0 +1,84 @@
+// フォントサイズ
+
+// .font-lg	{ font-size:	40	px	;}
+.font-lr	{ font-size:	40	px	;}
+// .font-md	{ font-size:	26	px	;}
+// .font-sm	{ font-size:	16	px	;}
+// .font-footer	{ font-size:	14	px	;}
+
+// マージン・パディング
+// .mb-sm {
+//   margin-bottom: 16px !important;
+// }
+// .mb-md {
+// 	margin-bottom: 40px !important;
+// }
+// .mb-lg {
+//   margin-bottom: 80px !important;
+// }
+// .pb-sm {
+//   padding-bottom: 16px !important;
+// }
+// .pb-lg {
+//   padding-bottom: 80px !important;
+// }
+
+
+// -------------
+// header
+// -------------
+
+.header {
+	height: 750px;
+}
+
+.header__nav-bar {
+	display: flex;
+}
+
+.sp-menu {
+	display: none;
+}
+
+.menu-list {
+	width: 50%;
+	height: 75px;
+	background-color: transparent;
+	visibility: visible;
+	position: static;
+	transform: scale(1);
+
+	ul {
+		position: static;
+		display: flex;
+		transform: translate(0);
+		margin-bottom: 0;
+		justify-content: flex-end;
+		li {
+			line-height: 75px;
+			margin-right: 30px;
+		}
+	}
+}
+
+.header__title {
+	width: 90%;
+	margin: 170px auto;
+	align-items: flex-start;
+	justify-content: flex-end;
+	h1 {
+		font-size: 70px;
+		margin-bottom: 20px;
+		}
+	h2 {
+		font-size: 35px;
+		line-height: 1.5;
+	}
+}
+
+
+.header__subtitle {
+	display: flex;
+	justify-content: center;
+	margin-left: 40px;
+}
